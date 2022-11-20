@@ -7,7 +7,7 @@ This is a project that requires me to develop a website in under a week using HT
 3. The shopping cart system is broken, you can add products to the cart but you cannot remove the products, that is the downside that i was not able to fix in such a short period of time.
 4. In the future, I might update this website and fix some functionalities whenever I am free.
 5. As I am still learning those programming languages and frameworks, do not expect it to run very smoothly. I had a anuerysm trying to write code in JS. Trust me it is not fun.
-6. To remove all the products from the cart, open developer tools, go to application and clikc on local storage. From the top right, next to the cross you click on the clear icon and it will remove all the data stored in the cart.
+6. To remove all the products from the cart, open developer tools, go to application and click on local storage, and click on the http:// tab listed under local storage. From the top right, next to the cross you click on the "No symbol" icon and it will remove all the data stored in the cart.
 
 # Programming languages and Frameworks used
 1. HTML
