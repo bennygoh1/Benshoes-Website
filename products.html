@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="topimage">
+        <img src="assets/main/47581.png" alt="" class="img-fluid" id="homelogo">
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark sticky-top">
+        <a href="#" class="navbar-brand shoelogo"><img src="Assets/main/BennyShoesLogo.png" class="px-3" alt="">Benny Shoes Store</a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link px-5">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link active px-5">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutus.html" class="nav-link px-5">About Us</a>
+                    </li>
+                    <li class="nav-item cart">
+                        <a href="cart.html" class="nav-link px-5">
+                            <ion-icon name="basket"></ion-icon> Cart (<span>0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Container class could be added later -->
+        </nav>
+        
+    <!-- Carousel -->
+
+    <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active"> <!-- This should link to the shop when the user clicks on the image -->
+                <a href="#productsheader"><img src="Assets/shop/shoepromo1.png" class="d-block w-100 shopcursor" alt="Promotion 1"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="#productsheader"><img src="Assets/shop/shoepromo2.png" class="d-block w-100 shopcursor" alt="Promotion 2"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="#productsheader"><img src="Assets/shop/shoepromo3.png" class="d-block w-100 shopcursor" alt="Promotion 3"></a>
+            </div>
+        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon shopcarouselprev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon shopcarouselnext" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Products -->
+
+    <!-- First row (Product 1 - 4) -->
+    <section class="product">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5 m-auto text-center">
+                    <h1 id="productsheader">Products</h1>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-lg-3 col-md-4 py-5">
+                    <div class="card border-0 bg-light shopimage">
+                        <div class="card-body">
+                            <img src="assets/shop/conversechuck70high(129).png" class="img-fluid" alt="converse chuck70">
+                        </div>
+                    </div>
+                    <h5>Converse Chuck 70</h5>
+                    <p><del>$129</del> $64</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ConverseChuck">
+                        Add To Cart
+                      </button>
+                </div>
+                <div class="col-lg-3 col-md-4 py-5">
+                    <div class="card border-0 bg-light shopimage">
+                        <div class="card-body">
+                            <img src="assets/shop/vansclassicslipon(79).png" class="img-fluid" alt="vans classic slip on">
+                        </div>
+                    </div>
+                    <h5>Vans Classic Slip On</h5>
+                    <p><del>$79</del> $40</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#VansClassic">Add To Cart</button>
+                </div>
+                <div class="col-lg-3 col-md-4 py-5">
+                    <div class="card border-0 bg-light shopimage">
+                        <div class="card-body">
+                            <img src="assets/shop/vansfuzzylacestyle(100).png" class="img-fluid" alt="vans fuzzy lace style">
+                        </div>
+                    </div>
+                    <h5>Vans Fuzzy Lace Style</h5>
+                    <p><del>$100</del> $50</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#VansFuzzyLace">Add To Cart</button>
+                </div>
+                <div class="col-lg-3 col-md-4 py-5">
+                    <div class="card border-0 bg-light shopimage">
+                        <div class="card-body">
+                            <img src="assets/shop/vansoldskool(89).png" class="img-fluid" alt="vans old skool">
+                        </div>
+                    </div>
+                    <h5>Vans Old Skool</h5>
+                    <p>$89</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#VansOldSkool">Add To Cart</button>
+                </div>
+
+                <!-- Second row (Product 4 - 8) -->
+
+                <div class="col-lg-3 col-md-4 py-5">
+                    <div class="card border-0 bg-light shopimage">
+                        <div class="card-body">
+                            <img src="assets/shop/warriorschoolshoes(29).png" class="img-fluid" alt="warriorschoolshoes">
+                        </div>
+                    </div>
+                    <h5>Warrior Shoes Black</h5>
+                    <p>$29</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#WarriorShoes">Add To Cart</button>
+                </div>
+                <div class="col-lg-3 col-md-4 py-5">
+                    <div class="card border-0 bg-light shopimage">
+                        <div class="card-body">
+                            <img src="assets/shop/stansmithadidas(150).png" class="img-fluid" alt="adidas stan smith">
+                        </div>
+                    </div>
+                    <h5>Adidas Stan Smith</h5>
+                    <p>$150</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AdidasStanSmith">Add To Cart</button>
+                </div>
+                <div class="col-lg-3 col-md-4 py-5">
+                    <div class="card border-0 bg-light shopimage">
+                        <div class="card-body">
+                            <img src="assets/shop/nikeairmax(225).png" class="img-fluid" alt="nike airmax">
+                        </div>
+                    </div>
+                    <h5>Nike Air Max</h5>
+                    <p>$225</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#NikeAirMax">Add To Cart</button>
+                </div>
+                <div class="col-lg-3 col-md-4 py-5">
+                    <div class="card border-0 bg-light shopimage">
+                        <div class="card-body">
+                            <img src="assets/shop/adidasultraboost(200).png" class="img-fluid" alt="adidas ultraboost">
+                        </div>
+                    </div>
+                    <h5>Adidas Ultraboost</h5>
+                    <p><del>$200</del> $109</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AdidasUltraBoost">Add To Cart</button>
+                </div>
+
+                <!-- Third row (Product 8 - 12) -->
+
+                <div class="col-lg-3 col-md-4 py-5">
+                    <div class="card border-0 bg-light shopimage">
+                        <div class="card-body">
+                            <img src="assets/shop/nikeairjordan(220).png" class="img-fluid" alt="nike air jordans">
+                        </div>
+                    </div>
+                    <h5>Nike Air Jordan</h5>
+                    <p><del>$220</del> $150</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#NikeAirJordans">Add To Cart</button>
+                </div>
+
+                <div class="col-lg-3 col-md-4 py-5">
+                    <div class="card border-0 bg-light shopimage">
+                        <div class="card-body">
+                            <img src="assets/shop/nikedunklow(150).png" class="img-fluid" alt="nike dunk low">
+                        </div>
+                    </div>
+                    <h5>Nike Dunk Low</h5>
+                    <p><del>$150</del> $99</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#NikeDunkLow">Add To Cart</button>
+                </div>
+                <div class="col-lg-3 col-md-4 py-5">
+                    <div class="card border-0 bg-light shopimage">
+                        <div class="card-body">
+                            <img src="assets/shop/adidasultra4dfwd(350).png" class="img-fluid" alt="adidas ultra 4dfwd">
+                        </div>
+                    </div>
+                    <h5>Adidas Ultra 4DFWD</h5>
+                    <p><del>$350</del> $199</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AdidasUltra4DFWD">Add To Cart</button>
+                </div>
+                <div class="col-lg-3 col-md-4 py-5">
+                    <div class="card border-0 bg-light shopimage">
+                        <div class="card-body">
+                            <img src="assets/shop/nikezoomalphafly(350).png" class="img-fluid" alt="nike zoom alphafly">
+                        </div>
+                    </div>
+                    <h5>Nike Zoom Alphafly</h5>
+                    <p><del>$350</del> $199</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#NikeZoomAlphafly">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal divs -->
+    <!-- Modal product 1 -->
+    <div class="modal fade" id="ConverseChuck" tabindex="-1" aria-labelledby="ConverseChuckLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ConverseChuckLabel">Product Information</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card border-0 bg-light modalshopimage">
+                            <div class="card-body">
+                                <img src="assets/shop/conversechuck70high(129).png" class="img-fluid" alt="converse chuck70">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ms-auto">
+                        <h1>Converse Chuck 70</h1>
+                        <p>Black colour</p>
+                        <h2><del>$129</del> $64</h2>
+                        <h6>OVERVIEW</h6>
+                        <p>Premium high-top canvas shoe with iconic silhouette<br>
+                            Winged tongue stitching for reinforcement<br>
+                            Archival star ankle patch and vintage license plate<br>
+                            OrthoLite insole for comfort<br>
+                            35mm rubber taping<br>
+                            OrthoLite is a trademark of O2 Partners, LLC.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary add-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Product 2 -->
+      <div class="modal fade" id="VansClassic" tabindex="-1" aria-labelledby="VansClassicLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="VansClassicLabel">Product Information</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card border-0 bg-light modalshopimage">
+                            <div class="card-body">
+                                <img src="assets/shop/vansclassicslipon(79).png" class="img-fluid" alt="vans classic slip on">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ms-auto">
+                        <h1>Vans Classic Slip on</h1>
+                        <p>Checkerboard Style</p>
+                        <h2><del>$79</del> $40</h2>
+                        <h6>OVERVIEW</h6>
+                        <p>Vans The Classic Slip-On has a low profile, slip-on canvas upper with all-over checker print, elastic side accents, Vans flag label and Vans original Waffle Outsole.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary add-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Modal product 3 -->
+    <div class="modal fade" id="VansFuzzyLace" tabindex="-1" aria-labelledby="VansFuzzyLaceLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="VansFuzzyLaceLabel">Product Information</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card border-0 bg-light modalshopimage">
+                            <div class="card-body">
+                                <img src="assets/shop/vansfuzzylacestyle(100).png" class="img-fluid" alt="vans fuzzy lace style">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ms-auto">
+                        <h1>Vans Fuzzy Lace Style</h1>
+                        <p>Purple Colour</p>
+                        <h2><del>$100</del> $50</h2>
+                        <h6>OVERVIEW</h6>
+                        <p>
+                            Tapping into our history, Style 36 was Vans first sidestripe shoe brought to life in 1977. Though the Vans Sidestripe has since become the unmistakable—and instantly recognizable—hallmark of the Vans brand, back then it was just a random doodle drawn by founder Paul Van Doren. It even had a different name: the jazz stripe.<br>
+
+                            Honoring the style that launched an icon, the Style 36 is made with classic canvas and suede uppers in a range of colorways. This low top, lace-up shoe also features vintage styling, reinforced toe caps, supportive padded collars, and signature rubber waffle outsoles.<br>
+
+                            - Vans original low top, sidestripe shoe<br>
+                            - Classic suede and canvas uppers<br>
+                            - Lace-up closure<br>
+                            - Vintage styling<br>
+                            - Reinforced toe caps<br>
+                            - Supportive padded collars<br>
+                            - Signature rubber waffle outsoles
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary add-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Product 4 -->
+      <div class="modal fade" id="VansOldSkool" tabindex="-1" aria-labelledby="VansOldSkoolLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="VansOldSkoolLabel">Product Information</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card border-0 bg-light modalshopimage">
+                            <div class="card-body">
+                                <img src="assets/shop/vansoldskool(89).png" class="img-fluid" alt="vans old skool">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ms-auto">
+                        <h1>Vans Old Skool</h1>
+                        <p>Black colour</p>
+                        <h2>$89</h2>
+                        <h6>OVERVIEW</h6>
+                        <p>Bring vintage vibes to your everyday rotation, thanks to the Vans Old Skool. Made with the iconic suede and canvas upper, these shoes provide comfort and durability all in one package. The padded collars bring in plush snugness, while the signature rubber waffle outsoles ensure grippy traction no matter where you go.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary add-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Product 5 -->
+      <div class="modal fade" id="WarriorShoes" tabindex="-1" aria-labelledby="WarriorShoesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="WarriorShoesLabel">Product Information</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card border-0 bg-light modalshopimage">
+                            <div class="card-body">
+                                <img src="assets/shop/warriorschoolshoes(29).png" class="img-fluid" alt="warriorschoolshoes">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ms-auto">
+                        <h1>Warrior Shoes</h1>
+                        <p>Black colour</p>
+                        <h2>$29</h2>
+                        <h6>OVERVIEW</h6>
+                        <p>
+                            -Canvas upper with rubber sole<br>
+                            -Lightweight<br>
+                            -Breathable
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary add-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Product 6 -->
+      <div class="modal fade" id="AdidasStanSmith" tabindex="-1" aria-labelledby="AdidasStanSmithLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="AdidasStanSmithLabel">Product Information</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card border-0 bg-light modalshopimage">
+                            <div class="card-body">
+                                <img src="assets/shop/stansmithadidas(150).png" class="img-fluid" alt="adidas stan smith">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ms-auto">
+                        <h1>Adidas Stan Smith</h1>
+                        <p>Cloud Green colour</p>
+                        <h2>$150</h2>
+                        <h6>OVERVIEW</h6>
+                        <p>
+                            Timeless appeal. Effortless style. Everyday versatility. For over 50 years and counting, adidas Stan Smith Shoes have continued to hold their place as an icon. This pair shows off a fresh redesign as part of adidas' commitment to use only recycled polyester by 2024. With a vegan upper and an outsole made from rubber waste, they still have iconic style, they're just made with the planet in mind.<br><br>
+
+                            This product is made with vegan alternatives to animal-derived ingredients or materials. It is also made with Primegreen, a series of high-performance recycled materials. 50% of upper is recycled content. No virgin polyester.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary add-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Product 7 -->
+      <div class="modal fade" id="NikeAirMax" tabindex="-1" aria-labelledby="NikeAirMaxLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="NikeAirMaxLabel">Product Information</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card border-0 bg-light modalshopimage">
+                            <div class="card-body">
+                                <img src="assets/shop/nikeairmax(225).png" class="img-fluid" alt="nike airmax">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ms-auto">
+                        <h1>Nike Air Max</h1>
+                        <p>Black and White colour</p>
+                        <h2>$225</h2>
+                        <h6>OVERVIEW</h6>
+                        <p>Throw tradition out the door? Never. Paying homage to both heritage and innovation, we've blended two icons to go beyond what's expected. Light, airy airmaxes in a subtle colour combo pairs beautifully with Air Max cushioning and rugged traction. Lace up and discover the comfort.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary add-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Product 8 -->
+      <div class="modal fade" id="AdidasUltraBoost" tabindex="-1" aria-labelledby="AdidasUltraBoostLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="AdidasUltraBoostLabel">Product Information</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card border-0 bg-light modalshopimage">
+                            <div class="card-body">
+                                <img src="assets/shop/adidasultraboost(200).png" class="img-fluid" alt="adidas ultraboost">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ms-auto">
+                        <h1>Adidas Ultraboost</h1>
+                        <p>Black colour</p>
+                        <h2><del>$200</del> $109</h2>
+                        <h6>OVERVIEW</h6>
+                        <p>These Ultraboost running shoes serve up comfort and responsiveness. You'll be riding on a BOOST midsole for endless energy, with a Linear Energy Push system and a Continental™ Rubber outsole. This shoe's upper is made with a high-performance yarn which contains at least 50% Parley Ocean Plastic —  reimagined plastic waste, intercepted on remote islands, beaches, coastal communities and shorelines, preventing it from polluting our ocean.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary add-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Product 9 -->
+      <div class="modal fade" id="NikeAirJordans" tabindex="-1" aria-labelledby="NikeAirJordansLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="NikeAirJordansLabel">Product Information</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card border-0 bg-light modalshopimage">
+                            <div class="card-body">
+                                <img src="assets/shop/nikeairjordan(220).png" class="img-fluid" alt="nike air jordans">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ms-auto">
+                        <h1>Nike Air Jordan</h1>
+                        <p>Black and White colour</p>
+                        <h2><del>$220</del> $150</h2>
+                        <h6>OVERVIEW</h6>
+                        <p>Get those exlusive and popular Nike Air Jordans! This pair of shoes is named after a Basetball legend Michael Jordan. Unleash your inner flight on the basketball court by pairing up with those shoes!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary add-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Product 10 -->
+      <div class="modal fade" id="NikeDunkLow" tabindex="-1" aria-labelledby="NikeDunkLowLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="NikeDunkLowLabel">Product Information</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card border-0 bg-light modalshopimage">
+                            <div class="card-body">
+                                <img src="assets/shop/nikedunklow(150).png" class="img-fluid" alt="nike dunk low">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ms-auto">
+                        <h1>Nike Dunk Low</h1>
+                        <p>Black and White colour</p>
+                        <h2><del>$150</del> $99</h2>
+                        <h6>OVERVIEW</h6>
+                        <p>Created for the hardwood but taken to the streets, the '80s b-ball icon returns with classic details and varsity hoops flair. Channelling vintage style back onto the streets, it pairs a shaggy letterman-style Swoosh with a padded, low-cut collar so you can take your game anywhere—in comfort.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary add-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Product 11 -->
+      <div class="modal fade" id="AdidasUltra4DFWD" tabindex="-1" aria-labelledby="AdidasUltra4DFWD" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="AdidasUltra4DFWDLabel">Product Information</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card border-0 bg-light modalshopimage">
+                            <div class="card-body">
+                                <img src="assets/shop/adidasultra4dfwd(350).png" class="img-fluid" alt="adidas ultra 4dfwd">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ms-auto">
+                        <h1>Adidas Ultra 4DFWD</h1>
+                        <p>Black colour</p>
+                        <h2><del>$350</del> $199</h2>
+                        <h6>OVERVIEW</h6>
+                        <p>Experience a smooth run with the Ultra 4DFWD running shoes. They combine the upper of our iconic Ultraboost with a 3D-printed adidas 4DFWD midsole that's innovated to compress forward, reducing braking forces and transforming the impact energy into forward motion. The result provides a smooth transition and unique gliding experience. An adidas PRIMEKNIT upper hugs the foot with targeted areas of support, while the Continental™ Rubber outsole provides extra grip in all weather conditions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary add-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Product 12 -->
+      <div class="modal fade" id="NikeZoomAlphafly" tabindex="-1" aria-labelledby="NikeZoomAlphaflyLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="NikeZoomAlphaflyLabel">Product Information</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card border-0 bg-light modalshopimage">
+                            <div class="card-body">
+                                <img src="assets/shop/nikezoomalphafly(350).png" class="img-fluid" alt="nike zoom alphafly">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ms-auto">
+                        <h1>Nike Zoom Alphafly</h1>
+                        <p>Mint Foam</p>
+                        <h2><del>$350</del> $199</h2>
+                        <h6>OVERVIEW</h6>
+                        <p>Once you take a few strides in the Nike Air Zoom Alphafly NEXT% 2, you'll never look at your favourite pair of old racing shoes the same way again. These rocket ships are made to help shave precious time off your personal records without surrendering the foundation you need to go the full distance. A thick, lightweight support system marries the 2 worlds of comfort and speed in holy running matrimony. Enjoy the greatest energy return of all our racing shoes while you chase your personal bests and leave the competition in the dust.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary add-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2021 Ben Shoes</p>
+            <p>Follow our social medias: <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a></p>
+
+            <a href="index.html" class="text-light">Home</a>
+            <a href="products.html" class="text-light">Shop</a>
+            <a href="aboutus.html" class="text-light">About Us</a>
+            <a href="cart.html" class="text-light">Cart</a>
+
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="Jquery/jquery-3.6.1.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+.carousel-indicators{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 50%;
+    height: 25px;
+    margin: 0 auto;
+}
+
+.homecursor{
+    cursor: default;
+}
+
+.shopcursor{
+    cursor: default;
+}
+
+.carousel-control-prev .homecarouselprev{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 25%;
+    height: 20%;
+    margin: 25% 75% 25% 0;
+}
+
+.carousel-control-next .homecarouselnext{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 25%;
+    height: 20%;
+    margin: 25% 0 25% 75%;
+}
+
+.carousel-control-prev .shopcarouselprev{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 25%;
+    height: 35%;
+    margin: 25% 75% 25% 0;
+}
+
+.carousel-control-next .shopcarouselnext{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 25%;
+    height: 35%;
+    margin: 25% 0 25% 75%;
+}
+
+.homefooterimg .card-body{
+    background: url('Assets/home/runningstockimage.png');
+}
+
+.shopimage{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+
+#ConverseChuck .modalshopimage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shoesizebuttons button{
+    background-color: white;
+}
+
+.shoelogo img{
+    width: 6.5rem;
+}
+
+.shoesizebuttons button:hover{
+    background-color: black;
+    color: white;
+}
+
+.cartsection ion-icon {
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.productcart img{
+    width: 20%;
+    height: 20%;
+}
+
+.productcart{
+    border: 1px solid #ced4da;
+    border-radius: 15px;
+}
+
+.productcart .titlecolor{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.cartsection .cartproductprice{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.cartsection .quantity{
+    display: inline-block;
+    margin-left: 150px;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+/* a .active{
+    border-bottom: 5px solid black;
+} */
+
+@media screen and (max-width: 480px){
+    .productcart img{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .productcart img{
+        width: 100%;
+        height: 50%;
+    }
+}
