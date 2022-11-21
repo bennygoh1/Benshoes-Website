@@ -1,5 +1,7 @@
 # Benshoes-Website
 This is a project that requires me to develop a website in under a week using HTML, CSS, JavaScript and a framework called Bootstrap.
+![image](https://user-images.githubusercontent.com/39120147/202962137-9a5e2ae4-cf58-4076-9cfc-ea1090325a5b.png)
+
 
 # More description
 1. I made this website for my school website, that requires the use of extensive knowledge of HTML, CSS, Javascript and Bootstrap to develop a E-commerence website with a shopping cart system.
@@ -19,4 +21,5 @@ This is a project that requires me to develop a website in under a week using HT
 I made this website alone for this school project, as someone who is new to front end development, developing a website like this without any help is hard.
 
 # Preview
-Images and other demonstrations coming soon.
+Home Page (1/3)
+![image](https://user-images.githubusercontent.com/39120147/202962153-df2de42b-3aef-4067-b620-b8c920ed0af7.png)
