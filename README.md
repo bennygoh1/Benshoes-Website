@@ -18,7 +18,7 @@ This is a project that requires me to develop a website with desktop, tablet and
 4. Bootstrap
 
 # More background clarity
-I made this website alone for this school project, as someone who is new to front end development, developing a website like this without any help is hard.
+I made this website alone for this school project, as someone who is new to front end development, developing a website like this without any help is challenging.
 
 # Preview
 Home Page (1/3)
